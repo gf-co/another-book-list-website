@@ -18,7 +18,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Quick notes
 
 1. Unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [Jest](https://jestjs.io/docs/getting-started).
-1. No remote back-end service such as [Supabase](https://supabase.com) used here. All data resides in [/data](./data).
+1. No remote back-end service such as [Supabase](https://supabase.com) used here. All data resides in [/data](./data) (even the images).
 1. I used [MDX](https://nextjs.org/docs/pages/building-your-application/configuring/mdx) to use Markdown for an item page.
 
 ## Prerequisite to run locally
