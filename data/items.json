@@ -1,0 +1,90 @@
+[
+  {
+    "id": "start-with-why-by-simon-sinek",
+    "name": "Start with Why by Simon Sinek",
+    "categoryId": "non-fiction",
+    "description": "Start with Why shows that the leaders who've had the greatest influence in the world all think, act, and communicate the same way -- and it's the opposite of what everyone else does. Sinek calls this powerful idea The Golden Circle, and it provides a framework upon which organizations can be built, movements can be led, and people can be inspired. And it all starts with WHY.",
+    "pinned": true,
+    "imageUrl": "/items/start-with-why-by-simon-sinek.jpg"
+  },
+  {
+    "id": "the-lean-startup-by-eric-ries",
+    "name": "The Lean Startup by Eric Ries",
+    "categoryId": "non-fiction",
+    "description": "The Lean Startup approach fosters companies that are both more capital efficient and that leverage human creativity more effectively. Inspired by lessons from lean manufacturing, it relies on “validated learning,” rapid scientific experimentation, as well as a number of counter-intuitive practices that shorten product development cycles, measure actual progress without resorting to vanity metrics, and learn what customers really want. It enables a company to shift directions with agility, altering plans inch by inch, minute by minute.",
+    "pinned": false,
+    "imageUrl": "/items/the-lean-startup-by-eric-ries.jpg"
+  },
+  {
+    "id": "clean-code-by-robert-c-martin",
+    "name": "Clean Code by Robert C. Martin",
+    "categoryId": "non-fiction",
+    "description": "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship . Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code “on the fly” into a book that will instill within you the values of a software craftsman and make you a better programmer—but only if you work at it.",
+    "pinned": false,
+    "imageUrl": "/items/clean-code-by-robert-c-martin.jpg"
+  },
+  {
+    "id": "refactoring-by-martin-fowler",
+    "name": "Refactoring by Martin Fowler",
+    "categoryId": "non-fiction",
+    "description": "As the application of object technology--particularly the Java programming language--has become commonplace, a new problem has emerged to confront the software development community. Significant numbers of poorly designed programs have been created by less-experienced developers, resulting in applications that are inefficient and hard to maintain and extend. Increasingly, software system professionals are discovering just how difficult it is to work with these inherited, non-optimal applications. For several years, expert-level object programmers have employed a growing collection of techniques to improve the structural integrity and performance of such existing software programs. Referred to as refactoring, these practices have remained in the domain of experts because no attempt has been made to transcribe the lore into a form that all developers could use.",
+    "pinned": false,
+    "imageUrl": "/items/refactoring-by-martin-fowler.jpg"
+  },
+  {
+    "id": "design-patterns-by-erich-gamma-richard-helm-ralph-johnson-john-vlissides",
+    "name": "Design Patterns by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "categoryId": "non-fiction",
+    "description": "Capturing a wealth of experience about the design of object-oriented software, four top-notch designers present a catalog of simple and succinct solutions to commonly occurring design problems. Previously undocumented, these 23 patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves.",
+    "pinned": false,
+    "imageUrl": "/items/design-patterns-by-erich-gamma-richard-helm-ralph-johnson-john-vlissides.jpg"
+  },
+  {
+    "id": "effective-typescript-by-dan-vanderkam",
+    "name": "Effective TypeScript by Dan Vanderkam",
+    "categoryId": "non-fiction",
+    "description": "TypeScript is a typed superset of JavaScript with the potential to solve many of the headaches for which JavaScript is famous. But TypeScript has a learning curve of its own, and understanding how to use it effectively can take time. This book guides you through 62 specific ways to improve your use of TypeScript. Author Dan Vanderkam, a principal software engineer at Sidewalk Labs, shows you how to apply these ideas to your codebase to make it cleaner, safer, and easier to work with.",
+    "pinned": false,
+    "imageUrl": "/items/effective-typescript-by-dan-vanderkam.jpg"
+  },
+  {
+    "id": "the-hobbit-by-j-r-r-tolkien",
+    "name": "The Hobbit by J.R.R. Tolkien",
+    "categoryId": "fiction",
+    "description": "The Hobbit is a tale of high adventure, undertaken by a company of dwarves in search of dragon-guarded gold. A reluctant partner in this perilous quest is Bilbo Baggins, a comfort-loving unambitious hobbit, who surprises even himself by his resourcefulness and skill as a burglar.",
+    "pinned": false,
+    "imageUrl": "/items/the-hobbit-by-j-r-r-tolkien.jpg"
+  },
+  {
+    "id": "the-lord-of-the-rings-by-j-r-r-tolkien",
+    "name": "The Lord of the Rings by J.R.R. Tolkien",
+    "categoryId": "fiction",
+    "description": "The Lord of the Rings tells of the great quest undertaken by Frodo and the Fellowship of the Ring: Gandalf the wizard; the hobbits Merry, Pippin, and Sam; Gimli the dwarf; Legolas the elf; Boromir of Gondor; and a tall, mysterious stranger called Strider. This epic trilogy takes up where The Hobbit leaves off, tracing the legend of the One Ring, found by Bilbo in the Goblin's cave, to its final destruction in the Crack of Doom.",
+    "pinned": false,
+    "imageUrl": "/items/the-lord-of-the-rings-by-j-r-r-tolkien.jpg"
+  },
+  {
+    "id": "the-hunger-games-by-suzanne-collins",
+    "name": "The Hunger Games by Suzanne Collins",
+    "categoryId": "fiction",
+    "description": "The Hunger Games is a dystopian novel set in Panem, a North American country consisting of the wealthy Capitol and 12 districts in varying states of poverty. Every year, children from the districts are selected via lottery to participate in a compulsory televised battle royale death match called The Hunger Games.",
+    "pinned": false,
+    "imageUrl": "/items/the-hunger-games-by-suzanne-collins.jpg"
+  },
+  {
+    "id": "the-pragmatic-programmer-by-andrew-hunt-and-david-thomas",
+    "name": "The Pragmatic Programmer by Andrew Hunt and David Thomas",
+    "categoryId": "educational",
+    "description": "The Pragmatic Programmer is one of those rare tech books you’ll read, re-read, and read again over the years. Whether you’re new to the field or an experienced practitioner, you’ll come away with fresh insights each and every time.",
+    "pinned": false,
+    "imageUrl": "/items/the-pragmatic-programmer-by-andrew-hunt-and-david-thomas.jpg"
+  },
+  {
+    "id": "cracking-the-coding-interview-by-gayle-laakmann-mcdowell",
+    "name": "Cracking the Coding Interview by Gayle Laakmann McDowell",
+    "categoryId": "educational",
+    "description": "Cracking the Coding Interview is the result of my first-hand experience interviewing at top companies and later coaching candidates through the interview process. It is the result of hundreds of conversations with candidates. It is the result of reading dozens of books on interviewing. It is the result of thousands of hours spent on resumes, phone screens, and interviews.",
+    "pinned": false,
+    "imageUrl": "/items/cracking-the-coding-interview-by-gayle-laakmann-mcdowell.jpg"
+  }
+]

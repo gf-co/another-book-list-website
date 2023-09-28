@@ -1,0 +1,18 @@
+[
+  {
+    "id": "all",
+    "name": "All"
+  },
+  {
+    "id": "non-fiction",
+    "name": "Non-fiction"
+  },
+  {
+    "id": "fiction",
+    "name": "Fiction"
+  },
+  {
+    "id": "educational",
+    "name": "Educational"
+  }
+]

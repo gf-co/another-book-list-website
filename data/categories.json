@@ -1,0 +1,20 @@
+[
+  {
+    "id": "non-fiction",
+    "name": "Non-fiction",
+    "description": "Get real with non-fiction books.",
+    "icon": "book"
+  },
+  {
+    "id": "fiction",
+    "name": "Fiction",
+    "description": "Basically, illusions.",
+    "icon": "book"
+  },
+  {
+    "id": "educational",
+    "name": "Educational",
+    "description": "Get smarter.",
+    "icon": "book"
+  }
+]
