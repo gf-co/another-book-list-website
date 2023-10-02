@@ -1,5 +1,14 @@
 {
+  // @note - Jest and Cypress types conflict if going to use expect() - https://github.com/cypress-io/cypress/issues/22059
+  // https://github.com/cypress-io/cypress/issues/26308#issuecomment-1499724602
+  "ts-node": {
+    "compilerOptions": {
+      "module": "es2015",
+      "moduleResolution": "node"
+    }
+  },
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": [
       "dom",
@@ -26,7 +35,7 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
   },
   "include": [
     "next-env.d.ts",
@@ -35,6 +44,7 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "cypress.config.ts"
   ]
 }

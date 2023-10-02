@@ -1,10 +1,10 @@
 import { ActiveFilters } from "@/app/search/page";
 import Suggestions from "@/components/Suggestions";
+import suggestions from "@/data/suggestions.json";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
 describe("Suggestions", () => {
-  const suggestions = ["apple", "banana", "cherry"];
   const activeFilters: ActiveFilters = { category: "", keyword: "" };
   const setActiveFilters = jest.fn();
 

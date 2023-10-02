@@ -1,1 +1,22 @@
-["Start with Why", "Programmer", "Startup", "Design", "Code"]
+[
+  {
+    "keyword": "Start with Why",
+    "category": "non-fiction"
+  },
+  {
+    "keyword": "Programmer",
+    "category": "educational"
+  },
+  {
+    "keyword": "Hobbit",
+    "category": "fiction"
+  },
+  {
+    "keyword": "Coding Interview",
+    "category": "educational"
+  },
+  {
+    "keyword": "Clean Code",
+    "category": "non-fiction"
+  }
+]

@@ -1,19 +1,20 @@
 import { ActiveFilters } from "@/app/search/page";
+import { Suggestion } from "@/data.types";
 import { icons } from "@/data/icons";
 
 type SuggestionsProps = {
-  suggestions: string[];
+  suggestions: Suggestion[];
   activeFilters: ActiveFilters;
   setActiveFilters: (filters: ActiveFilters) => void;
 };
 
 export default function Suggestions({
   suggestions,
-  activeFilters: filters,
+  activeFilters,
   setActiveFilters,
 }: SuggestionsProps) {
-  const handleSuggestionClick = (suggestion: string) => {
-    const newFilters = { ...filters, keyword: suggestion };
+  const handleSuggestionClick = (suggestion: Suggestion) => {
+    const newFilters = { ...suggestion };
     setActiveFilters(newFilters);
   };
 
@@ -22,20 +23,15 @@ export default function Suggestions({
       <h3 className="text-lg text-white">Top searches</h3>
       <ul className="pl-4">
         {suggestions.map((suggestion) => (
-          <li key={suggestion}>
+          <li key={suggestion.keyword}>
             <div className="flex items-center gap-2 p-2">
               {icons["search"]}
-              {/* <Link href={`/search?keyword=${suggestion}`}>
-                <p className="text-sm text-white hover:underline">
-                  {suggestion}
-                </p>
-              </Link> */}
               <button
                 type="button"
                 className="text-sm text-white hover:underline"
                 onClick={() => handleSuggestionClick(suggestion)}
               >
-                {suggestion}
+                {suggestion.keyword}
               </button>
             </div>
           </li>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "website",
+    "name": "Website",
+    "description": "Check my developer website.",
+    "url": "https://github.com",
+    "icon": "globe"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "description": "Check my projects on GitHub.",
+    "url": "https://github.com/gf-co",
+    "icon": "github"
+  },
+  {
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "description": "Check my LinkedIn profile.",
+    "url": "https://linkedin.com",
+    "icon": "linkedin"
+  }
+]

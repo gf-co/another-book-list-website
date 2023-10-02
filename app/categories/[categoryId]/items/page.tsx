@@ -1,13 +1,16 @@
 import PageHeader from "@/components/PageHeader";
 import Row from "@/components/Row";
 import categories from "@/data/categories.json";
-import items from "@/data/items.json";
+import itemsData from "@/data/items.json";
 import { PageProps } from "@/lib/server.types";
 import { notFound } from "next/navigation";
 
 export default function ItemsPage({ params }: PageProps) {
   const category = categories.find(
     (category) => category.id === params.categoryId,
+  );
+  const items = itemsData.filter(
+    (item) => item.categoryId === params.categoryId,
   );
 
   if (!category) {

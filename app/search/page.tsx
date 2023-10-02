@@ -17,20 +17,22 @@ export type ActiveFilters = {
 
 export default function SearchPage() {
   const [activeFilters, setActiveFilters] = useState<ActiveFilters>({
-    category: "all",
+    category: "",
     keyword: "",
   });
   const [items, setItems] = useState<Item[]>([]);
+  const hasNoActiveFilters = !activeFilters.category && !activeFilters.keyword;
 
   // Every time active filters changes, fetch data
   useEffect(() => {
     const filteredItems = itemsData.filter((item) => {
-      const categoryMatch =
-        activeFilters.category === "all" ||
-        item.categoryId === activeFilters.category;
+      const categoryMatch = item.categoryId === activeFilters.category;
       const keywordMatch =
         !activeFilters.keyword ||
-        item.name.toLowerCase().includes(activeFilters.keyword.toLowerCase());
+        item.name.toLowerCase().includes(activeFilters.keyword.toLowerCase()) ||
+        item.description
+          .toLowerCase()
+          .includes(activeFilters.keyword.toLowerCase());
       return categoryMatch && keywordMatch;
     });
     setItems(filteredItems);
@@ -67,10 +69,10 @@ export default function SearchPage() {
           No items found for keyword "code"
       if only category exists
           No items found category "Educationals". */}
-      {!items.length && (
+      {!hasNoActiveFilters && !items.length && (
         <p className="text-sm text-gray-400">
           No items found for{" "}
-          {activeFilters.keyword && activeFilters.category !== "all"
+          {activeFilters.keyword
             ? `keyword "${
                 activeFilters.keyword
               }" and category "${categories.find(

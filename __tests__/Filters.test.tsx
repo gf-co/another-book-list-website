@@ -1,28 +1,15 @@
+import { ActiveFilters } from "@/app/search/page";
+import categories from "@/data/categories.json";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 import Filters from "../components/Filters";
-
-const categories = [
-  {
-    id: "1",
-    name: "Category 1",
-    description: "Description 1",
-    icon: "Icon 1",
-  },
-  {
-    id: "2",
-    name: "Category 2",
-    description: "Description 2",
-    icon: "Icon 2",
-  },
-];
 
 describe("Filters", () => {
   it("renders correctly", () => {
     render(
       <Filters
         categories={categories}
-        activeFilters={{ category: "all", keyword: "" }}
+        activeFilters={categories[0] as unknown as activefilters}
         setActiveFilters={() => {}}
       />,
     );
@@ -32,10 +19,11 @@ describe("Filters", () => {
         "Search with keyword in title and description",
       ),
     ).toBeInTheDocument();
-    expect(screen.getByText("All")).toBeInTheDocument();
-    expect(screen.getByText("Category 1")).toBeInTheDocument();
-    expect(screen.getByText("Category 2")).toBeInTheDocument();
     expect(screen.getByText("Search")).toBeInTheDocument();
+
+    categories.forEach((category) => {
+      expect(screen.getByText(category.name)).toBeInTheDocument();
+    });
   });
 
   it("updates activeFilters when form is submitted", () => {
@@ -43,7 +31,7 @@ describe("Filters", () => {
     render(
       <Filters
         categories={categories}
-        activeFilters={{ category: "all", keyword: "" }}
+        activeFilters={categories[0] as unknown as activefilters}
         setActiveFilters={setActiveFilters}
       />,
     );
@@ -56,10 +44,9 @@ describe("Filters", () => {
     fireEvent.change(keywordInput, { target: { value: "test" } });
     fireEvent.click(searchButton);
 
-    expect(setActiveFilters).toHaveBeenCalledWith({
-      category: "all",
-      keyword: "test",
-    });
+    expect(setActiveFilters).toHaveBeenCalledWith(
+      categories[0] as unknown as ActiveFilters,
+    );
   });
 
   it("updates activeFilters when category is selected", () => {
@@ -67,26 +54,18 @@ describe("Filters", () => {
     render(
       <Filters
         categories={categories}
-        activeFilters={{ category: "all", keyword: "" }}
+        activeFilters={categories[0] as unknown as activefilters}
         setActiveFilters={setActiveFilters}
       />,
     );
 
-    const category1 = screen.getByText("Category 1");
-    const category2 = screen.getByText("Category 2");
-
-    fireEvent.click(category1);
-
-    expect(setActiveFilters).toHaveBeenCalledWith({
-      category: "1",
-      keyword: "",
-    });
-
-    fireEvent.click(category2);
-
-    expect(setActiveFilters).toHaveBeenCalledWith({
-      category: "2",
-      keyword: "",
+    categories.forEach((category) => {
+      const categoryElement = screen.getByText(category.name);
+      fireEvent.click(categoryElement);
+      expect(setActiveFilters).toHaveBeenCalledWith({
+        category: category.id,
+        keyword: "",
+      });
     });
   });
 });

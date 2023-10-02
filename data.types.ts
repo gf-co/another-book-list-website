@@ -26,3 +26,8 @@ export type Filter = {
   id: string;
   name: string;
 };
+
+export type Suggestion = {
+  keyword: string;
+  category: string;
+};

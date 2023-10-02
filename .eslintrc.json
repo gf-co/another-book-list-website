@@ -4,6 +4,7 @@
         "prettier"
     ],
     "overrides": [
+        // Ensure ESLint applies only the Testing Library and Jest files
         {
             "files": [
                 "**/__tests__/**/*.[jt]s?(x)",
@@ -13,6 +14,16 @@
                 "plugin:testing-library/react",
                 "plugin:jest-dom/recommended",
                 "plugin:jest/recommended"
+            ]
+        },
+        // Ensure ESLint applies only the Cypress files
+        {
+            "files": [
+                "**/*.cy.tsx",
+                "**/*.cy.ts"
+            ],
+            "extends": [
+                "plugin:cypress/recommended"
             ]
         }
     ]
