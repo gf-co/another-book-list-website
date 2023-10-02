@@ -5,14 +5,14 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
 describe("Suggestions", () => {
-  const activeFilters: ActiveFilters = { category: "", keyword: "" };
+  const noFilter: ActiveFilters = { category: "", keyword: "" };
   const setActiveFilters = jest.fn();
 
   test("renders the top searches heading", () => {
     render(
       <Suggestions
         suggestions={suggestions}
-        activeFilters={activeFilters}
+        activeFilters={noFilter}
         setActiveFilters={setActiveFilters}
       />,
     );
@@ -24,7 +24,7 @@ describe("Suggestions", () => {
     render(
       <Suggestions
         suggestions={suggestions}
-        activeFilters={activeFilters}
+        activeFilters={noFilter}
         setActiveFilters={setActiveFilters}
       />,
     );
@@ -32,7 +32,7 @@ describe("Suggestions", () => {
     expect(suggestionItems.length).toBe(suggestions.length);
 
     suggestionItems.forEach((item, index) => {
-      expect(item).toHaveTextContent(suggestions[index]);
+      expect(item).toHaveTextContent(suggestions[index].keyword);
     });
   });
 });

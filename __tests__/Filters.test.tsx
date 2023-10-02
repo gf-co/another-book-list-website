@@ -1,16 +1,24 @@
 import { ActiveFilters } from "@/app/search/page";
 import categories from "@/data/categories.json";
+import items from "@/data/items.json";
 import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 import Filters from "../components/Filters";
 
 describe("Filters", () => {
+  const noFilter: ActiveFilters = { category: "", keyword: "" };
+  const setActiveFilters = jest.fn();
+
+  beforeEach(() => {
+    setActiveFilters.mockClear();
+  });
+
   it("renders correctly", () => {
     render(
       <Filters
         categories={categories}
-        activeFilters={categories[0] as unknown as activefilters}
-        setActiveFilters={() => {}}
+        activeFilters={noFilter}
+        setActiveFilters={setActiveFilters}
       />,
     );
 
@@ -27,11 +35,10 @@ describe("Filters", () => {
   });
 
   it("updates activeFilters when form is submitted", () => {
-    const setActiveFilters = jest.fn();
     render(
       <Filters
         categories={categories}
-        activeFilters={categories[0] as unknown as activefilters}
+        activeFilters={noFilter}
         setActiveFilters={setActiveFilters}
       />,
     );
@@ -41,20 +48,20 @@ describe("Filters", () => {
     );
     const searchButton = screen.getByText("Search");
 
-    fireEvent.change(keywordInput, { target: { value: "test" } });
+    fireEvent.change(keywordInput, { target: { value: items[0].name } });
     fireEvent.click(searchButton);
 
-    expect(setActiveFilters).toHaveBeenCalledWith(
-      categories[0] as unknown as ActiveFilters,
-    );
+    expect(setActiveFilters).toHaveBeenCalledWith({
+      category: items[0].categoryId,
+      keyword: items[0].name,
+    });
   });
 
   it("updates activeFilters when category is selected", () => {
-    const setActiveFilters = jest.fn();
     render(
       <Filters
         categories={categories}
-        activeFilters={categories[0] as unknown as activefilters}
+        activeFilters={noFilter}
         setActiveFilters={setActiveFilters}
       />,
     );
