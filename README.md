@@ -19,17 +19,12 @@
 
 ## Screenshots
 
-<img width="800" alt="image" src="https://github.com/gf-co/another-book-list-website/assets/145439449/39b88dc1-54e3-43a7-8911-04be91598b55">
-
-<img width="800" alt="image" src="https://github.com/gf-co/another-book-list-website/assets/145439449/8b7aee91-1e4d-4a83-8061-d034491b036f">
-
-<img width="800" alt="image" src="https://github.com/gf-co/another-book-list-website/assets/145439449/e0577f41-eb53-43fd-b736-d26ea995f6c5">
-
-<img width="800" alt="image" src="https://github.com/gf-co/another-book-list-website/assets/145439449/effb3c69-db37-42a6-8cad-6b5df2ba0bf8">
-
-<img src="https://github.com/gf-co/another-book-list-website/assets/145439449/e73a3736-3c27-4f35-9e26-cd8a334a0297" alt="Screenshot of Items page in mobile screen" height="500">
-
-<img src="https://github.com/gf-co/another-book-list-website/assets/145439449/d13b61ea-2234-4193-a565-007c7ab4ecf3" alt="Screenshot of Sidebar opened in mobile screen" height="500">
+<img src='https://github.com/gf-co/another-book-list-website/assets/145439449/39b88dc1-54e3-43a7-8911-04be91598b55' width='400'  />
+<img src='https://github.com/gf-co/another-book-list-website/assets/145439449/8b7aee91-1e4d-4a83-8061-d034491b036f' width='400' />
+<img src='https://github.com/gf-co/another-book-list-website/assets/145439449/e0577f41-eb53-43fd-b736-d26ea995f6c5' width='400' />
+<img src='https://github.com/gf-co/another-book-list-website/assets/145439449/effb3c69-db37-42a6-8cad-6b5df2ba0bf8' width='400' />
+<img src='https://github.com/gf-co/another-book-list-website/assets/145439449/e73a3736-3c27-4f35-9e26-cd8a334a0297' height='400' />
+<img src='https://github.com/gf-co/another-book-list-website/assets/145439449/d13b61ea-2234-4193-a565-007c7ab4ecf3' height='400' />
 
 ## Videos
 
