@@ -8,6 +8,7 @@
 - Next.js
 - TypeScript
 - Tailwind CSS
+- SASS/CSS
 - CSS
 - Jest
 - Cypress
